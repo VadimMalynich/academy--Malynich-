@@ -9,11 +9,11 @@ public class ArrayTask12 {
         Random rand = new Random();
         for (int i=0;i<arr.length;i++){
             if (a==6){
-                arr[i]=(int)(-11+Math.random()*11);
+                arr[i]=(int)(-11+Math.random()*10);
                 continue;
             }
             if (b == 6) {
-                arr[i]=(int)(Math.random()*11);
+                arr[i]=(int)(1+Math.random()*10);
                 continue;
             }
             arr[i]=(int)(-11+Math.random()*22);
