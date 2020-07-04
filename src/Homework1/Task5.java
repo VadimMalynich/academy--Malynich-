@@ -57,7 +57,6 @@ public class Task5 {
             }
             int result = pairs(k, arr);
             System.out.println("\nКоличество пар = "+result);
-
             scanner.close();
         }
  }
