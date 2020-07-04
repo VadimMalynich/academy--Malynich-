@@ -35,5 +35,6 @@ public class ArrayTask11 {
             System.out.println("\nСумма второй половины больше");
         }
         in.close();
+
     }
 }
