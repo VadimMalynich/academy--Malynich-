@@ -14,6 +14,7 @@ public class Task3 {
         for (int i=1;i<11;i++){
             System.out.print(i*num+" ");
         }
+
         in.close();
     }
 }
