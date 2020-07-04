@@ -45,6 +45,6 @@ public class Task2 {
                 System.out.println("Unsupported type");
                 break;
         }
-        Scanner close;
+        in.close();
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         int num;
-        Scanner in=new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         do{
             System.out.print("Введите число от 1 до 10: ");
             num=in.nextInt();
@@ -14,6 +14,6 @@ public class Task3 {
         for (int i=1;i<11;i++){
             System.out.print(i*num+" ");
         }
-        Scanner close;
+        in.close();
     }
 }

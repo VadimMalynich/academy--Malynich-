@@ -31,6 +31,6 @@ public class Task1 {
             sum*=0.8;
         }
         System.out.println("Итоговая сумма: "+sum);
-        Scanner close;
+        in.close();
     }
 }
