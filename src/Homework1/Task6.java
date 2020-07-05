@@ -13,7 +13,6 @@ public class Task6 {
         str2=scanner.nextLine();
         char string1[]=str1.toCharArray();
         char string2[]=str2.toCharArray();
-        char temp[];
         for(int i=0;i<string1.length;i++){
             for(int j=0;j<string2.length;j++){
                 if(string1[i]==string2[j]){
