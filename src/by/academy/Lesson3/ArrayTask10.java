@@ -1,6 +1,4 @@
-package Lesson3;
-
-import java.sql.SQLOutput;
+package by.academy.Lesson3;
 
 public class ArrayTask10 {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package Lesson3;
-
-import java.util.Random;
+package by.academy.Lesson3;
 
 public class ArrayTask3 {
     public static void main(String args[]){

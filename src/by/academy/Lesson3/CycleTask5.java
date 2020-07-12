@@ -1,4 +1,4 @@
-package Lesson3;
+package by.academy.Lesson3;
 
 public class CycleTask5 {
     public static void main(String args[]){

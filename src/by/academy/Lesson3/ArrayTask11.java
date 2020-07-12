@@ -1,6 +1,5 @@
-package Lesson3;
+package by.academy.Lesson3;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ArrayTask11 {
