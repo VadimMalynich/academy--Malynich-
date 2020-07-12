@@ -47,6 +47,21 @@ public class Deal {
         for (Product pr : product) {
             sum += pr.getPrice();
         }
+        System.out.print("\nОбщая сумма товаров: ");
+        return sum;
+    }
+
+    public double sumQuantity(int quantity, int k) {
+        double sum = 0;
+        int count = 0;
+        for (Product pr : product) {
+            if (k - 1 == count) {
+                sum = pr.getPrice() * quantity;
+                System.out.print("Цена за товар \"" + pr.getName() + "\", количеством " + quantity + ": ");
+                break;
+            }
+            count++;
+        }
         return sum;
     }
 }
