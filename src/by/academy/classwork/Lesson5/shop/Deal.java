@@ -1,4 +1,4 @@
-package by.academy.Lesson5.shop;
+package by.academy.classwork.Lesson5.shop;
 
 public class Deal {
     private User buyer;
@@ -42,7 +42,7 @@ public class Deal {
 
     public double sumDeal() {
         double sum = 0;
-        System.out.println("Продавец: " + getSeller().getName());
+        System.out.println("\nПродавец: " + getSeller().getName());
         System.out.println("Покупатель: " + getBuyer().getName());
         for (Product pr : product) {
             sum += pr.getPrice();
@@ -56,7 +56,11 @@ public class Deal {
         int count = 0;
         for (Product pr : product) {
             if (k - 1 == count) {
-                sum = pr.getPrice() * quantity;
+                if (product.length-3 <= count ) {
+                    sum =/*pr.getPrice()**/quantity * pr.getDiscount();
+                } else {
+                    sum = pr.getPrice() * quantity;
+                }
                 System.out.print("Цена за товар \"" + pr.getName() + "\", количеством " + quantity + ": ");
                 break;
             }
