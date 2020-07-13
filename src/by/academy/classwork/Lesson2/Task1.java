@@ -1,4 +1,4 @@
-package by.academy.Lesson2;
+package by.academy.classwork.Lesson2;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package by.academy.Lesson4.product;
+package by.academy.classwork.Lesson4.product;
 
 public class Product {
     public String name;
