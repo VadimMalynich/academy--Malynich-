@@ -16,10 +16,7 @@ public class Phone {
     }
 
     public Phone(long number, String model, double weight) {
-        super();
-        new Phone(number, model);
-        this.number = number;
-        this.model = model;
+        this(number, model);
         this.weight = weight;
     }
 
@@ -55,7 +52,9 @@ public class Phone {
         System.out.println("Звонит " + name + ". Входящий номер: +" + number);
     }
 
-    public void sendMessage(String message, long number) {
-        System.out.println("Исходящий номер +" + number + ". Сообщение: " + message);
+    public void sendMessage(String message, long... number) {
+        for (int i = 0; i < number.length; i++) {
+            System.out.println("Исходящий номер +" + number[i] + ". Сообщение: " + message);
+        }
     }
 }

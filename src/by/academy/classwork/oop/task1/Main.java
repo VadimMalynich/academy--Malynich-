@@ -14,8 +14,6 @@ public class Main {
         phone1.receiveCall("Евгений", 375335896321l);
         phone2.receiveCall("Елена", 375152587496l);
         phone3.receiveCall("Леонид", 375292583020l);
-        phone1.sendMessage("Привет!", 375331023650l);
-        phone2.sendMessage("Купишь хлеб?.", 375152962036l);
-        phone3.sendMessage("Перезвони.", 375292102540l);
+        phone1.sendMessage("Привет!", 375331023650l, 375152962036l, 375292102540l);
     }
 }
