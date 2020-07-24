@@ -1,9 +1,13 @@
-package by.academy.classwork.Lesson5.shop;
+package by.academy.deal;
 
 public class Product {
     private double price;
     private String name;
-    protected double discount;
+    private double discount;
+
+    Product(){
+        super();
+    }
 
     Product(double price, String name) {
         super();
@@ -39,7 +43,6 @@ public class Product {
     }
 
     public double getDiscount() {
-        return (1-discount/100)*getPrice();
+        return (1 - discount / 100) * getPrice();
     }
 }
-
