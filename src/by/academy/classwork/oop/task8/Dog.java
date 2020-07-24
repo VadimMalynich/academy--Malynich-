@@ -1,6 +1,6 @@
 package by.academy.classwork.oop.task8;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     private String name;
     private String breed;
 
@@ -14,6 +14,10 @@ public class Dog extends Animal{
         super(food, location);
         this.name = name;
         this.breed = breed;
+    }
+
+    public void dogInfo() {
+        System.out.println("Порода собаки: " + breed + "\nИмя собаки: " + name);
     }
 
     @Override

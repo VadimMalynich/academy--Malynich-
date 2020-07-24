@@ -14,6 +14,12 @@ public class Car {
         super();
     }
 
+    public Car(String mark, String classAuto, double weight) {
+        this.mark = mark;
+        this.classAuto = classAuto;
+        this.weight = weight;
+    }
+
     public Car(String mark, String classAuto, double weight, Driver driver, Engine engine) {
         this.mark = mark;
         this.classAuto = classAuto;
@@ -56,6 +62,11 @@ public class Car {
 
     public void turnLeft() {
         System.out.println("Поворот налево");
+    }
+
+    public void printInfoCar() {
+        System.out.println("Информаци об автомобиле: марка " + getMark() + ", класс " + getClassAuto()
+                + ", вес " + getWeight() + ";");
     }
 
     public void printInfo() {
