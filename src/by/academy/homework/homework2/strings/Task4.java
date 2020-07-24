@@ -2,7 +2,6 @@
 Если таких слов несколько, найти первое из них.*/
 package by.academy.homework.homework2.strings;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task4 {
@@ -23,7 +22,6 @@ public class Task4 {
         int minUniqueChars = Integer.MAX_VALUE;
 
         for (int i = 0; i < str.length; i++) {
-
             int currentUniqueCounter = 0;
             char[] cArr = new char[65538];
             for (char c : str[i].toCharArray()) {
@@ -42,9 +40,10 @@ public class Task4 {
         }
         System.out.println(str[indexMinUnique]);
         in.close();
+    }
+}
 
-
-        ////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
        /* Scanner in = new Scanner(System.in);
 
         int n;
@@ -127,7 +126,7 @@ public class Task4 {
         in.close();*/
 
 
-        //////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
        /* System.out.println("Ââåäèòå ñëîâà â ñòðîêó ÷åðåç ïðîáåë:");
         Scanner sc = new Scanner(System.in);
         String string = new String();
@@ -159,5 +158,3 @@ public class Task4 {
                 }
             }
         }*/
-    }
-}
