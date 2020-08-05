@@ -19,8 +19,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int flag;
         String name;
-        User seller = enterData("продавца");
-        User buyer = enterData("покупателя");
+        User seller = enterData("продавца", scanner);
+        User buyer = enterData("покупателя", scanner);
         int n;
         do {
             System.out.print("Введите количество продуктов: ");
@@ -82,11 +82,11 @@ public class Main {
                     temp[i] = product[i - 1];
                 }
                 deal = new Deal(seller, buyer, temp);
-                setQuantity(temp, deal, iceCream, biscuits);
+                setQuantity(temp, deal, iceCream, biscuits, scanner);
             } else if (n == 0) {
                 System.out.println("Класс Product не содержит данных доступных для удаления!");
                 deal = new Deal(seller, buyer, product);
-                setQuantity(product, deal, iceCream, biscuits);
+                setQuantity(product, deal, iceCream, biscuits, scanner);
             } else {
                 System.out.print("Введите название продукта который хотите удалить: ");
                 String tempName;
@@ -101,7 +101,7 @@ public class Main {
                 if (tempNumb == n) {
                     System.out.println("Такого продукта не было добавлено!");
                     deal = new Deal(seller, buyer, product);
-                    setQuantity(product, deal, iceCream, biscuits);
+                    setQuantity(product, deal, iceCream, biscuits, scanner);
                 } else {
                     Product temp[] = new Product[n + 2];
                     for (int i = 0; i < tempNumb; i++) {
@@ -111,15 +111,14 @@ public class Main {
                         temp[i] = product[i + 1];
                     }
                     deal = new Deal(seller, buyer, temp);
-                    setQuantity(temp, deal, iceCream, biscuits);
+                    setQuantity(temp, deal, iceCream, biscuits, scanner);
                 }
             }
         }
         scanner.close();
     }
 
-    public static void setQuantity(Product product[], Deal deal, IceCream iceCream, Biscuits biscuits) {
-        Scanner scanner = new Scanner(System.in);
+    public static void setQuantity(Product product[], Deal deal, IceCream iceCream, Biscuits biscuits, Scanner scanner) {
         int k = 0, quantity = 0, count = 0;
         for (Product pr : product) {
             System.out.println(++k + ". " + pr.getName());
@@ -143,11 +142,9 @@ public class Main {
             System.out.println(deal.sumQuantity(quantity, k));
         }
         System.out.println(deal.getDeadline());
-        scanner.close();
     }
 
-    public static User enterData(String str) {
-        Scanner scanner = new Scanner(System.in);
+    public static User enterData(String str, Scanner scanner) {
         User userMethods = new User();
         String name, dateOfBirth = "", phone = "", email = "";
         System.out.print("Введите имя " + str + ": ");
@@ -164,9 +161,7 @@ public class Main {
             System.out.print("Введите email " + str + " : ");
             email = scanner.nextLine();
         }
-
         User user = new User(name, dateOfBirth, phone, email);
-//scanner.close();
         return user;
     }
 }
