@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class CustomIterator<T> implements Iterator<T> {
     private T[] array;
-    private Integer counter;
+    private Integer counter = 0;
 
     public CustomIterator(T[] array) {
         this.array = array;
