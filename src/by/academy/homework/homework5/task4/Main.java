@@ -1,8 +1,6 @@
 package by.academy.homework.homework5.task4;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class Main {
         String folderPath = "./src/by/academy/homework/homework5/task4/files/";
         String resultPath = "./src/by/academy/homework/homework5/task4/result.txt";
         File f = new File(resultPath);
-        if(f.isFile()){
+        if (f.isFile()) {
             f.delete();
         }
         String str = "";
