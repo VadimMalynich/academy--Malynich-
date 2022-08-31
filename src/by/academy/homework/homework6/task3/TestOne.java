@@ -8,8 +8,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 
 @RunWith(Parameterized.class)
-public class TestOne {
-
+public class TestOne{
     private int x;
     private int y;
     private int result;
